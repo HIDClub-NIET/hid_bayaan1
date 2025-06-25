@@ -62,10 +62,10 @@ body.modal-open {
 
 #logo img {
     border-radius: 50%;
-    background-color: white;
+    background-color: transparent;
     margin-top: 1.5em;
-    height: 5vw;
-    width: 10vh;
+    height: 14vw;
+    width: 27vh;
 }
 
 #nav {
@@ -84,10 +84,7 @@ body.modal-open {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-#Psycologist{
-    
 
-}
 
 #nav a {
     font-weight: 500;
@@ -539,9 +536,6 @@ body.modal-open {
 
 /* Our Services Section */
 
-#servicesCard{
-    gap:;
-}
 #services {
     width: 100%;
     margin-top: 100px;
@@ -1443,7 +1437,8 @@ footer {
 }
   
 .logoContainer img {
-    max-height: 50px;
+    height: 7vh;
+    width: 5vw;
 }
   
 .copyright {
