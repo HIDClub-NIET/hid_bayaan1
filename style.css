@@ -421,60 +421,136 @@ body.modal-open {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
     #homeImage {
-        display: none;
+        height: 25vw;
+        width: 35vh;
     }
 
     #nav a {
-        font-size: 0.9em;
-    }
-
-    #hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1em;
-    }
-
-    #heroLeft {
-        width: 100%;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 0.5em;
+        font-size: 0.8em;
+        padding: 0.5em;
     }
 
     #heroLeft h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     #heroLeft h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .button {
-        padding: 0.5em 1em;
+        padding: 0.4em 0.8em;
+        font-size: 0.8em;
+    }
+
+    #aboutHeading {
+        font-size: 1.2em;
+    }
+
+    #aboutText {
+        font-size: 14px;
+    }
+
+    .whatWeDoCard {
+        width: 90%;
+        padding: 1em;
+    }
+
+    .whatWeDoCard h5 {
+        font-size: 1em;
+    }
+
+    .whatWeDoCard p {
         font-size: 0.9em;
     }
 
-    #heroRight {
-        display: none;
-    }
-        /* width: 100%;
-        height: auto;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        padding: 0;
-        gap: 1em;
+    #services h1 {
+        font-size: 1.5em;
     }
 
-    #heroRightText a {
+    .card {
+        height: 100vw;
+    }
+
+    .serviceImage {
+        height: 25vw;
+        width: 20vh;
+    }
+
+    .serviceDescription {
+        margin-top: 80px;
+        font-size: 0.9em;
+    }
+
+    #ourTeam h2 {
+        font-size: 1.5em;
+    }
+
+    .memberCard {
+        width: 95vw;
+        padding: 0.5em;
+    }
+
+    .memberCard img {
+        width: 8vh;
+        height: 25vw;
+    }
+
+    .memberCard .info h4 {
+        font-size: 0.9em;
+    }
+
+    .memberCard .info p {
         font-size: 0.8em;
-    } */
+    }
+
+    .galleryHeading {
+        font-size: 1.2em;
+    }
+
+    .eventCard {
+        height: 70vw;
+    }
+
+    .viewGallery {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .carousel {
+        height: 250px;
+    }
+
+    .testimonialCard {
+        height: 60vw;
+        padding: 1em 4em;
+    }
+
+    .testimonialCard p {
+        font-size: 0.7em;
+    }
+
+    #counsellorHeading h1 {
+        font-size: 1em;
+    }
+
+    #counsellorHeading h3 {
+        font-size: 0.9em;
+    }
+
+    #counsellorText p {
+        font-size: 0.8em;
+    }
+
+    #cousellorSkill h2 {
+        font-size: 0.9em;
+    }
+
+    #cousellorBulletsText ul li {
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -829,9 +905,9 @@ body.modal-open {
     gap: 1.2em;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
     padding: 0.9em;
-    width: 43vh; 
+    width: 20rem; 
     transition: box-shadow 0.3s ease;
-    height: 10vw;
+    height: 6rem;
 }
 
 .memberCard:hover {
@@ -839,8 +915,8 @@ body.modal-open {
 }
 
 .memberCard img {
-    width: 10vh;
-    height: 5vw;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%; 
     margin-right: 0.9em; 
     object-fit: cover; 
@@ -868,15 +944,15 @@ body.modal-open {
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     .memberCard {
-        width: 45vh;
-        height: 12vw;
+        width: 18rem;
+        height: 5rem;
     }
 }
 
 @media (max-width: 992px) {
     .memberCard {
-        width: 50vh;
-        height: 14vw;
+        width: 16rem;
+        height: 4.5rem;
     }
 }
 
@@ -894,6 +970,8 @@ body.modal-open {
     .memberCard img {
         margin-right: 0;
         margin-bottom: 0.9em;
+        width: 4rem;
+        height: 4rem;
     }
 }
 
@@ -908,14 +986,57 @@ body.modal-open {
         width: 90vw;
     }
     .memberCard img {
-        width: 10vh;
-        height: 20vw;
+        width: 4rem;
+        height: 4rem;
     }
 }
 
-/* Our Events */
+/* Large Screen Adjustments */
+@media (min-width: 1440px) {
+    #home {
+        height: 70vh; /* Fixed height instead of 85% to prevent excessive stretching */
+    }
 
-/* Base Styles */
+    #heroLeft h1 {
+        font-size: 8em;
+    }
+
+    #heroLeft h2 {
+        font-size: 4em;
+    }
+
+    .memberCard {
+        width: 22rem;
+        height: 7rem;
+    }
+
+    .memberCard img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .card {
+        height: 25vw;
+        max-height: 300px;
+    }
+
+    .serviceImage {
+        height: 6vw;
+        width: 12vh;
+        max-height: 80px;
+    }
+
+    .eventCard {
+        width: 30%;
+        height: 20vw;
+        max-height: 250px;
+    }
+
+    .testimonialCard {
+        height: 15vw;
+        max-height: 180px;
+    }
+}
 .galleryContainer {
     width: 80%;
     margin: 0 auto;
@@ -1461,6 +1582,50 @@ footer {
 }
 #carddetails{
     font-size: 1.12em;
+}
+
+/* Footer Responsiveness */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .logoContainer img {
+        height: 5vh;
+        width: 4vw;
+    }
+
+    .copyright {
+        font-size: 0.9em;
+    }
+
+    .socialLinks i {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoContainer img {
+        height: 4vh;
+        width: 3vw;
+    }
+
+    .copyright {
+        font-size: 0.8em;
+    }
+
+    .socialLinks {
+        gap: 0.5em;
+    }
+
+    .socialLinks i {
+        font-size: 1.2em;
+    }
 }
 
 
